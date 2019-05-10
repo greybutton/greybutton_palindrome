@@ -2,7 +2,7 @@ require 'test_helper'
 
 class GreybuttonPalindromeTest < Minitest::Test
   def test_non_palindrome
-    assert !'apple'.palindrome?
+    refute 'apple'.palindrome?
   end
 
   def test_literal_palindrome
@@ -10,7 +10,7 @@ class GreybuttonPalindromeTest < Minitest::Test
   end
 
   def test_mixed_case_palindrome
-    skip
+    assert 'RaceCar'.palindrome?
   end
 
   def test_palindrome_with_punctuation
