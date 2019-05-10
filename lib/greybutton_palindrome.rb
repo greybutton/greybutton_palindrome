@@ -6,6 +6,10 @@ class String
     processed_content == processed_content.reverse
   end
 
+  # Returns the letters in the string.
+  def letters
+  end
+
   private
 
   # Returns content for palindrome testing.
